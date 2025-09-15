@@ -10,3 +10,7 @@ var=input("primero definimos una variable, puedes escribir una frase o plabra: "
 
 print("ahora reemplazaremos las a y o por numeros")
 print(var.replace("a","4").replace("o","0"))
+
+print("\nAhora quitaremos el prefijo a tu frase, si lo tiene.")
+
+print(var.removeprefix("El ").removeprefix("el ").removeprefix("La ").removeprefix("la ").removeprefix("EL ").removeprefix("LA "))
