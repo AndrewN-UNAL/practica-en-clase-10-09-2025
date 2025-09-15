@@ -13,4 +13,12 @@ print(var.replace("a","4").replace("o","0"))
 
 print("\nAhora quitaremos el prefijo a tu frase, si lo tiene.")
 
-print(var.removeprefix("El ").removeprefix("el ").removeprefix("La ").removeprefix("la ").removeprefix("EL ").removeprefix("LA "))
+if var==var.removeprefix("El ").removeprefix("el ").removeprefix("La ").removeprefix("la ").removeprefix("EL ").removeprefix("LA "):
+    print("tu frase no tiene un prefijo valido")
+
+    ejem="el tiene frio"
+    print(f"\nTe dejo un ejemplo: {ejem} -> {ejem.removeprefix('el ')}")
+
+else:
+    print(var.removeprefix("El ").removeprefix("el ").removeprefix("La ").removeprefix("la ").removeprefix("EL ").removeprefix("LA "))
+
